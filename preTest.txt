@@ -1,0 +1,9 @@
+Automated Test robotframework Website :  https://app.futureskill.co/login --> {$url}
+Test Step : 
+1: Open Browser 
+2: Click Register Button
+3: Fill out Registration info 
+4: Click Register Submit Button
+5: Verifiy Text/Element OTP Page --> "ระบบได้ส่งรหัส OTP..."
+
+Final State : Edit Test Sctipt to --> Page Object Model 
