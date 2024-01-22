@@ -5,52 +5,14 @@ Suite Setup       Open Browser    https://app.futureskill.co/login   chrome
 
 
 *** Variables ***
-${email}         supdavit@gmail.com   
-${name}          DAVIT   
-${lastName}      SANPOTE
-${PhoneNumber}   
-${password}     
+
 
 
 
 *** Keywords ***
 
-Click Register Element
-    Click Element       //*[@id="__next"]/div[2]/div/div[2]/div/div/a/h6
-    
-Checked Checkbox
-    Click Element       //*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[6]/label/input
 
-Click Register Button
-    Click Button        //*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button
-
-
-Input Email
-    [Arguments]    ${email}
-    Input Text    //*[@name="email"]    ${email}
-
-Input name
-    [Arguments]    ${name}
-    Input Text    //*[@name="firstName"]    ${name}
-
-Input lastName
-    [Arguments]    ${lastName}
-    Input Text    //*[@name="lastName"]    ${lastName}
-
-Input phoneNumber
-    [Arguments]    ${PhoneNumber}
-    Input Text    //*[@name="phoneNumber"]    ${PhoneNumber}
-
-Input nemPassword
-    [Arguments]    ${password}
-    Input Text    //*[@name="newPassword"]    ${password}
-
-Input confirmPassword
-    [Arguments]    ${password}
-    Input Text    //*[@name="confirmPassword"]    ${password}
-
-
-
+   
 *** Test Cases ***
 Register with valid info
    [Documentation]    Test the login functionality with valid credentials
@@ -65,7 +27,7 @@ Register with valid info
    
    Checked Checkbox 
    Click Register Button
-   Page Should Contain Element          //*[@id="__next"]/div[2]/div/div[2]/h6[1] 
+   Page Should Contain Element          
 
 
  
