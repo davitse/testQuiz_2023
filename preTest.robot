@@ -8,8 +8,8 @@ Suite Setup       Open Browser    https://app.futureskill.co/login   chrome
 ${email}         supdavit@gmail.com   
 ${name}          DAVIT   
 ${lastName}      SANPOTE
-${PhoneNumber}   0858765221
-${password}      testdavit1234TESTDAVIT
+${PhoneNumber}   
+${password}     
 
 
 
